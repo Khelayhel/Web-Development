@@ -1,0 +1,26 @@
+h1{
+    font-family: tahoma , Helvetica, sans-serif;
+      color: blue;
+ }
+ p{
+     font-size: 20px ; color: red; font-family: Arial, sans-serif;
+ }
+em{
+    font-weight: bold;
+    color: rgb(20,143,220);font-size:40pt ;
+
+ }
+img{
+     border: 2px; color: rgb(255, 0, 0) solid ; height:300px ; width:300px;
+ }
+P.a{
+    font-size: 10pt;
+    color: rgb(148, 97, 103);
+}
+ .special{
+    color: rgb(195,28,159);
+  font-size: 15pt;
+  
+ }
+  
+

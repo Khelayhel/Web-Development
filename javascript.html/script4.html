@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form type="#">
+         <p><label>Radius:
+         <input type="number"  id="radiusField"></label>
+         <input type="button"  id="Calculatebutton" value="Calculate">    
+        </p>
+    </form>
+    <h2 id="result"></h2>
+</body>
+<script>
+ function sphereVolume( radius)
+ {
+  return( 4.0/3.0 ) *Math.PI * Math.pow(radius , 3)
+ }
+ function displayVolume()
+ {
+ var inputField = document.getElementById("radiusField");
+ var radius = parseFloat(inputField.value);
+ var result = document.getElementById("result"); 
+ result.innerHTML = "Sphere volume is:" + sphereVolume(radius);
+ }
+ var b = document.getElementById("Calculatebutton")
+ b.addEventListener("click", displayVolume);
+</script>
+</html>

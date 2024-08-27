@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ var num1; //string entered by user
+ var num2; //string entered by user
+ var num3;  
+ var name; //String entered by user
+//read the name from the prompt box as a string
+ name= window.prompt("Please enter your name")
+ //read First  and Second Number from user as a String
+ firstNum = window.prompt("Enter First Integer");
+ SecondNum = window.prompt("Enter Second Integer");
+ ThirdNum = window.prompt("Enter Third Integer")
+ //convert numbers to Integers
+ number1= parseInt(firstNum)
+ number2= parseInt(SecondNum)
+ number3= parseInt(ThirdNum)
+ //add the numbers
+ product = number1*number2*number3;
+ //diplay the results
+ document.writeln("<h1>The product is " +product+ "</h1>")
+ document.writeln("<h1>Hello " +name+ ",welcome to Javascript programming! </h1>" )
+ document.write("<h1 style='color:magenta'>");
+ document.write("Welcome to\n Javascript Programming!</h1>");   
+ console.log("Welcome to Javascript today")
+ window.alert("Welcome to JavaScript Programming!")
+ //////////////////////////////////////
+ var now = new Date(); //get date from current time window
+ var hour = now.getHours();//get hour from current time window
+ //determine whether it is morning or evening
+  if( hour < 12)
+   document.write("<h1> Good Morning , time is " +hour+"</h1>")
+  else
+   document.write("<h1> Good Evening , time is " +hour+"</h1>")
+ // Full date
+ document.write("<h1> Todays Date:" + now + "</h1>")
+ /////////////////
+ let number = 50
+ let square = number * number
+
+ if(number < 60){
+   var largernumber = 80
+   let anotherLargerNumber = 100 //it is not seen outside if function
+   console.log("local let variable: ", anotherLargerNumber)
+ }
+   console.log("global variable var: ", largernumber)
+   //console.log(anotherLargerNumber)
+ ///////////////////////// 
+ 
+  
+   
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Product Price Calculator</h1>
+    <form id="inputForm">
+        <p><strong>Write your Name</strong></p>
+        <input type="text" name="name" placeholder="Enter your name" id="name">
+        <p><strong>Enter your Age</strong></p>
+        <input type="number" name="Age" placeholder="Enter your Age" id="Age">
+        <p><strong>Gender</strong></p>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+        <label for="product1">Product 1 price:</label>
+        <input type="number" id="product1" name="product1"><br><br>
+        <label for="product2">Product 2 price:</label>
+        <input type="number" id="product2" name="product2"><br><br>
+        <label for="product3">Product 3 price:</label>
+        <input type="number" id="product3" name="product3"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="output"></div>
+   <script>
+    const form = document.getElementById("inputForm");
+     const outputDiv = document.getElementById("output");
+     form.addEventListener("submit", function(event) {
+         event.preventDefault();
+         const nameInput = document.getElementById("name").value;
+         const ageInput = document.getElementById("Age").value;
+         const Gender = document.getElementById("gender").value;
+         const product1Price = parseFloat (document.getElementById("product1").value);
+         const product2Price = parseFloat (document.getElementById("product2").value);
+         const product3Price = parseFloat (document.getElementById("product3").value);
+         const total = product1Price + product2Price + product3Price;
+         const outputHtml = `
+                   <h2>Form Values</h2>
+                   <p>Name: ${nameInput}</p>
+                   <p>Age: ${ageInput}</p>
+                   <p>Gender: ${Gender}</p>
+                   <h2>Total Price of Products</h2>
+                   <p>Product 1: ${product1Price}</p>
+                   <p>Product 2: ${product2Price}</p>
+                   <p>Product 3: ${product3Price}</p>
+                   <p>Total Price of Products: ${total}</p>`
+                   outputDiv.innerHTML = outputHtml;
+     });
+     
+   </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   table{
+     border: 5px;
+     color: blueviolet;
+   }
+   
+   table tr td{
+    border: 1px solid blue;
+    color:green ;
+   }
+
+</style>
+<script>
+  document.write("<table>")
+    for( var i = 1; i <= 10 ; i++)
+     {
+      document.writeln("<tr>")
+        for( var j = 1; j <= 10 ; j++)
+         
+          document.writeln("<td>("+i+ "," +j+")</td>")
+         
+      document.writeln("</tr>")
+     }
+     document.writeln("</table>")
+  for(var i = 0; i <= 100; i++)
+    document.write("<h1>x" +i+ "</h1>")
+</script>
+<body>
+    
+</body>
+</html>

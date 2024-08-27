@@ -1,0 +1,25 @@
+body {
+    background-color: blue;
+}
+
+#container {
+    /* Center container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    /* Create a seperator between 2 container */
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%; /* This makes the 2 containers padding from each other */
+}
+
+#left-container, #right-container {
+    background-color: white;
+
+    width: 500px;
+    height: 500px;
+}

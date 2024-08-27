@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Positioning</title>
+    <style type="text/css">
+      .z1  {position:absolute;
+              top: 0px;
+              left: 0px;
+              z-index: 1;
+                }
+      .z2  { position: absolute;
+              top: 25px;
+              left: 100px;
+              z-index: 3;
+              opacity: 80%;
+         }          
+      .z3  { position: absolute;
+              top: 10px;
+              left: 20px;
+              /* z-index shows the order of picture above each other  */
+              z-index: 2;
+              opacity: 80%;
+         }          
+
+      body {
+           background-image: url("./download.jpg");
+           background-position:center;
+           /* repetition of picture  */
+           background-repeat:no-repeat;
+           background-attachment:fixed;
+           background-size: cover;
+           background-size: 100px;
+           /* the transparency opacity */
+           opacity: 80%;}
+    </style>
+</head>
+<body>
+  <p><img class="z1" src="Cod.jpg"
+    alt="First positioned image"/></p>  
+  <p><img class="z2" src="Cod.jpg"
+    alt="Second positioned image"/></p>  
+    <p class="z3">Positioned Text</p>    
+    
+</body>
+</html>

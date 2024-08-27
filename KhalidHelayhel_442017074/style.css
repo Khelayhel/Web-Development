@@ -1,0 +1,53 @@
+/* Khalid Helayhel 442017074 */
+body{
+    background-image: url(beauty.png);
+    background-size: cover;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    font-family:Tahoma;
+    padding: 0.2em;
+}
+
+
+.main-cont{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 3%;
+    left: 5%;
+    gap: 200px;
+    /*border: 2px solid red;*/
+    padding: 50px;
+}
+
+
+.form-cont{
+    border: medium solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    padding: 50px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.form-cont h3 { 
+    display: flex;
+    justify-content: center;
+
+}
+
+.result-cont{
+    border: medium solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    padding: 50px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.result-cont h3 {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eceff1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('https://th.bing.com/th?id=OIP.XoNw7GHjzGxUeOsqIaA4DwHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2'); /* Replace with your actual background image */
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            max-width: 600px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .social-panel {
+            padding: 50px;
+            background: #121212;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border-radius: 8px 0 0 8px;
+        }
+        .social-panel img {
+            width: 100px;
+            height: 100px;
+            margin-left: 15px;
+           padding: 12px; 
+        }
+        .social-panel p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .social-panel:hover{
+          color: red;
+          background-color: #4bc0d7;
+        }
+        .form-panel {
+            padding: 30px;
+            flex-grow: 1;
+        }
+        .form-panel h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .checkbox {
+            margin: 10px 0;
+        }
+        .signup-btn {
+            display: inline-block;
+            background-color: #4bc0d7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Information as comments -->
+    <!-- Name : [Your Name] ID : [Your ID] Section : [Your Section] -->
+    <div class="container">
+        <div class="social-panel">
+            <p>Login using social media to get quick access</p>
+            <!-- Use actual paths to your social media icons -->
+            <img width="1020px" height="160" src="https://th.bing.com/th?id=OIP.2JnkOryqztxXNm5XRbKc_QHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="Instagram"><br>
+            <img src="https://www.bing.com/th?id=OIP.Xn27U1Y5z0KR-wPnCt-v0QHaG0&w=102&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="Twitter"><br>
+            <img src="https://www.bing.com/th?id=OIP.gDyX3v18m7pYIilHNvL2tgHaEK&w=150&h=84&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="Snapchat"><br>
+           
+        </div>
+        <div class="form-panel">
+            <h2>Register your account</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email address" required>
+                <input type="number" placeholder="Age" min="18" max="100" step="1" maxlength="40" minlength="1" required>
+                <input type="date" placeholder="Birthday" required>
+                <input type="password" placeholder="Password" required>
+                <div class="checkbox">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <button class="signup-btn" type="submit">SignUp</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
